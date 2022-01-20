@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ntopic1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/topic1"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bluebox_no_corner"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/topic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="3uBDdebFMoY"
+                app:autoPlay="true" />
+
+            <Button
+                android:id="@+id/btntopic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluebox_10corner"
+                android:text="@string/answer_question1"
+                android:textColor="#FFFFFF"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ntopic2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/topic2"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bluebox_no_corner"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/topic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="_Zqcxbjzyxg"
+                app:autoPlay="true" />
+
+            <Button
+                android:id="@+id/btntopic2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_question2"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bluebox_10corner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ntopic3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/topic3"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bluebox_no_corner"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/topic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="NmoxusZCKCs"
+                app:autoPlay="true" />
+
+            <Button
+                android:id="@+id/btntopic3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_question3"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bluebox_10corner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ntopic4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/topic4"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bluebox_no_corner"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/topic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="I638IG9R8cM"
+                app:autoPlay="true" />
+
+            <Button
+                android:id="@+id/btntopic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_question4"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bluebox_10corner"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/ntopic5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/topic5"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="@drawable/bluebox_no_corner"/>
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/topic5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="lsOxBiw00eQ"
+                app:autoPlay="true" />
+
+            <Button
+                android:id="@+id/btntopic5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer_question5"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bluebox_10corner"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

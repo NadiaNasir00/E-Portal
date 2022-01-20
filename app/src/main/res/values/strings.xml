@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">E-Portal</string>
+    <string name="calculus_1_differentiation">Calculus 1: Differentiation</string>
+    <string name="answer_question">Answer Question</string>
+    <string name="topic1">Implicit Differentiation</string>
+    <string name="answer_question1">Answer Question</string>
+    <string name="topic2">Derivatives of Logarithmic Functions</string>
+    <string name="answer_question2">Answer Question</string>
+    <string name="topic3">Derivatives of Exponential and Inverse Trigonometric Functions</string>
+    <string name="answer_question3">Answer Question</string>
+    <string name="topic4">Local Linear Approximation: Differentials</string>
+    <string name="answer_question4">Answer Question</string>
+    <string name="topic5">L’Hôpital’s Rule: Indeterminate Forms</string>
+    <string name="answer_question5">Answer Question</string>
+</resources>
