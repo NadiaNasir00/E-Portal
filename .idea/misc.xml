@@ -5,7 +5,16 @@
       <map>
         <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/bluebox_10corner.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/bluebox_no_corner.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/btnback.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/green_10corner.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/redbox_10corner.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/softblue_10corner.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/white_10corner.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/white__no_corner.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/drawable/whiteboarder.xml" value="0.1" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/layout/activity_question.xml" value="0.12" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/EPortal/app/src/main/res/layout/activity_question_results.xml" value="0.1" />
       </map>
     </option>
   </component>
