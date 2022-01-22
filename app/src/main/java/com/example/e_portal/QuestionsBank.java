@@ -14,7 +14,7 @@ public class QuestionsBank {
 
     private static List<QuestionsList> topic2Questions() {
         final List<QuestionsList> questionsLists = new ArrayList<>();
-        final QuestionsList question1 = new QuestionsList("Find the derivative of\n","\\((X)^{log 2}\\)"+"with respect to"+"\\(X\\)", "\\(X^{x-1} (log x^2)\\)", "\\(X^{log x-1} (log X^2)\\)", "\\(X^{log x} (log X^2)\\)", "\\(X^{log 2} (log X^2)\\)", "\\(X^(log x-1) (log X^2)\\)", "");
+        final QuestionsList question1 = new QuestionsList("Find the derivative of\n","\\((X)^{log 2}\\)"+"with respect to"+"\\(X\\)", "\\(X^{x-1} (log x^2)\\)", "\\(X^{log x-1} (log X^2)\\)", "\\(X^{log x} (log X^2)\\)", "\\(X^{log 2} (log X^2)\\)", "\\(X^{log x-1} (log X^2)\\)", "");
         questionsLists.add(question1);
         return questionsLists;
     }
@@ -42,13 +42,13 @@ public class QuestionsBank {
 
     public static List<QuestionsList> getQuestions(String selectedTopicName) {
         switch (selectedTopicName) {
-            case "Implicit Differentiation":
+            case "Topic 1":
                 return topic1Questions();
-            case "Derivatives of Logarithmic Functions":
+            case "Topic 2":
                 return topic2Questions();
-            case "Derivatives of Exponential and Inverse Trigonometric Functions":
+            case "Topic 3":
                 return topic3Questions();
-            case "Local Linear Approximation: Differentials":
+            case "Topic 4":
                 return topic4Questions();
             default:
                 return topic5Questions();

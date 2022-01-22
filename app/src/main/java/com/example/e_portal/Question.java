@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -143,7 +141,7 @@ public class Question extends AppCompatActivity {
                 quizTimer.purge();
                 quizTimer.cancel();
 
-                startActivity(new Intent(Question.this, MainActivity.class));
+                startActivity(new Intent(Question.this, PlayVideo.class));
                 finish();
             }
         });
@@ -169,7 +167,7 @@ public class Question extends AppCompatActivity {
             option4.setText(questionsLists.get(currentQuestionPosition).getOption4());
         }
         else{
-            Intent intent = new Intent(Question.this, MainActivity.class);
+            Intent intent = new Intent(Question.this, PlayVideo.class);
             startActivity(intent);
 
             finish();
@@ -190,7 +188,7 @@ public class Question extends AppCompatActivity {
                     quizTimer.purge();
                     quizTimer.cancel();
                     Toast.makeText(Question.this, "Time Over", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Question.this, MainActivity.class);
+                    Intent intent = new Intent(Question.this, PlayVideo.class);
                     startActivity(intent);
 
                     finish();
@@ -256,7 +254,7 @@ public class Question extends AppCompatActivity {
         quizTimer.purge();
         quizTimer.cancel();
 
-        startActivity(new Intent(Question.this, MainActivity.class));
+        startActivity(new Intent(Question.this, PlayVideo.class));
         finish();
     }
     private void revealAnswer(){

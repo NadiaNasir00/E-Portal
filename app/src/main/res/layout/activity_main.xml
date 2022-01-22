@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".PlayVideo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:videoId="3uBDdebFMoY"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
 
             <Button
                 android:id="@+id/btntopic1"
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:videoId="_Zqcxbjzyxg"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
 
             <Button
                 android:id="@+id/btntopic2"
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:videoId="NmoxusZCKCs"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
 
             <Button
                 android:id="@+id/btntopic3"
@@ -139,7 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:videoId="I638IG9R8cM"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
 
             <Button
                 android:id="@+id/btntopic4"
@@ -174,7 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:videoId="lsOxBiw00eQ"
-                app:autoPlay="true" />
+                app:autoPlay="false" />
 
             <Button
                 android:id="@+id/btntopic5"

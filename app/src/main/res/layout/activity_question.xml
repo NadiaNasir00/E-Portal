@@ -85,7 +85,6 @@
             android:id="@+id/qword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Question will come here"
             android:padding="20dp"
             android:textColor="#000000"
@@ -101,7 +100,7 @@
             android:padding="20dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:layout_marginHorizontal="70dp"/>
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 

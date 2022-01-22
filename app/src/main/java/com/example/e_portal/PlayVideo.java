@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class PlayVideo extends AppCompatActivity {
 
     private String selectedtopicname = "";
 
@@ -23,41 +22,41 @@ public class MainActivity extends AppCompatActivity {
         final Button btntopic5 = findViewById(R.id.btntopic5);
 
         btntopic1.setOnClickListener(view -> {
-            selectedtopicname = "Implicit Differentiation";
+            selectedtopicname = "Topic 1";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(PlayVideo.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
             startActivity(intent);
         });
 
         btntopic2.setOnClickListener(view -> {
-            selectedtopicname = "Derivatives of Logarithmic Functions";
+            selectedtopicname = "Topic 2";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(PlayVideo.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
             startActivity(intent);
         });
 
         btntopic3.setOnClickListener(view -> {
-            selectedtopicname = "Derivatives of Exponential and Inverse Trigonometric Functions";
+            selectedtopicname = "Topic 3";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(PlayVideo.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
             startActivity(intent);
         });
 
         btntopic4.setOnClickListener(view -> {
-            selectedtopicname = "Local Linear Approximation: Differentials";
+            selectedtopicname = "Topic 4";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(PlayVideo.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
             startActivity(intent);
         });
 
         btntopic5.setOnClickListener(view -> {
-            selectedtopicname = "L’Hôpital’s Rule: Indeterminate Forms";
+            selectedtopicname = "Topic 5";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
-            Intent intent = new Intent(MainActivity.this, Question.class);
+            Intent intent = new Intent(PlayVideo.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
             startActivity(intent);
         });
