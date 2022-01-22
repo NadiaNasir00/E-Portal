@@ -170,8 +170,6 @@ public class Question extends AppCompatActivity {
         }
         else{
             Intent intent = new Intent(Question.this, MainActivity.class);
-            intent.putExtra("correct", getCorrectAnswer());
-            intent.putExtra("incorrect", getInCorrectAnswer());
             startActivity(intent);
 
             finish();
@@ -220,7 +218,6 @@ public class Question extends AppCompatActivity {
 
                     }
                 });
-
             }
         }, 1000, 1000);
     }

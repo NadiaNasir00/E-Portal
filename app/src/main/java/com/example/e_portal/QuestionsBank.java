@@ -42,13 +42,13 @@ public class QuestionsBank {
 
     public static List<QuestionsList> getQuestions(String selectedTopicName) {
         switch (selectedTopicName) {
-            case "topic1":
+            case "Implicit Differentiation":
                 return topic1Questions();
-            case "topic2":
+            case "Derivatives of Logarithmic Functions":
                 return topic2Questions();
-            case "topic3":
+            case "Derivatives of Exponential and Inverse Trigonometric Functions":
                 return topic3Questions();
-            case "topic4":
+            case "Local Linear Approximation: Differentials":
                 return topic4Questions();
             default:
                 return topic5Questions();
