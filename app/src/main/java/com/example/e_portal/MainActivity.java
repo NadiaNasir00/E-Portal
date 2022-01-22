@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btntopic5 = findViewById(R.id.btntopic5);
 
         btntopic1.setOnClickListener(view -> {
-            selectedtopicname = "topic1";
+            selectedtopicname = "Implicit Differentiation";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
             Intent intent = new Intent(MainActivity.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btntopic2.setOnClickListener(view -> {
-            selectedtopicname = "topic2";
+            selectedtopicname = "Derivatives of Logarithmic Functions";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
             Intent intent = new Intent(MainActivity.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btntopic3.setOnClickListener(view -> {
-            selectedtopicname = "topic3";
+            selectedtopicname = "Derivatives of Exponential and Inverse Trigonometric Functions";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
             Intent intent = new Intent(MainActivity.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btntopic4.setOnClickListener(view -> {
-            selectedtopicname = "topic4";
+            selectedtopicname = "Local Linear Approximation: Differentials";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
             Intent intent = new Intent(MainActivity.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btntopic5.setOnClickListener(view -> {
-            selectedtopicname = "topic5";
+            selectedtopicname = "L’Hôpital’s Rule: Indeterminate Forms";
             btntopic1.setBackgroundResource(R.drawable.whiteboarder);
             Intent intent = new Intent(MainActivity.this, Question.class);
             intent.putExtra("selectedtopic", selectedtopicname);

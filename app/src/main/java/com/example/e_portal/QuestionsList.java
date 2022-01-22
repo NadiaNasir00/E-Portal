@@ -1,10 +1,11 @@
 package com.example.e_portal;
 
 public class QuestionsList {
-    private String question, option1, option2, option3, option4, answer;
+    private String qword, question, option1, option2, option3, option4, answer;
     private String userSelectedAnswer;
 
-    public QuestionsList(String question, String option1, String option2, String option3, String option4, String answer, String userSelectedAnswer) {
+    public QuestionsList(String qword, String question, String option1, String option2, String option3, String option4, String answer, String userSelectedAnswer) {
+        this.qword = qword;
         this.question = question;
         this.option1 = option1;
         this.option2 = option2;
@@ -14,6 +15,7 @@ public class QuestionsList {
         this.userSelectedAnswer = userSelectedAnswer;
     }
 
+    public String getQword(){ return qword; }
     public String getQuestion() { return question; }
     public String getOption1() { return option1; }
     public String getOption2() { return option2; }

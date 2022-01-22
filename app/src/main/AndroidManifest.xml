@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EPortal">
         <activity
-            android:name=".QuestionResults"
-            android:exported="false" />
-        <activity
             android:name=".Question"
             android:exported="false" />
         <activity

@@ -72,68 +72,163 @@
         android:text="1/1"
         android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/question"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/softblue_10corner"
-        android:gravity="center"
-        android:minHeight="100dp"
-        android:text="Question will come here"
-        android:padding="20dp"
-        android:textColor="#000000"
-        android:textSize="16sp"/>
-    
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option1"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Option 1"
-        android:background="@drawable/white_10corner"
-        android:textAllCaps="false"
-        android:textColor="#000000"/>
+        android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Option 2"
-        android:background="@drawable/white_10corner"
-        android:textAllCaps="false"
-        android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/qword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Question will come here"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Option 3"
-        android:background="@drawable/white_10corner"
-        android:textAllCaps="false"
-        android:textColor="#000000"/>
+        <io.github.kexanie.library.MathView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="Question will come here"
+            android:padding="20dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="70dp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/option4"
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/a"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Option 4"
-        android:background="@drawable/white_10corner"
-        android:textAllCaps="false"
-        android:textColor="#000000"/>
+        android:background="@drawable/white_10corner">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="A"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Option 1"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_marginVertical="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_10corner">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="B"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Option 2"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_marginVertical="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_10corner">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="C"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Option 3"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_marginVertical="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/white_10corner">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="D"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Option 4"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:layout_marginVertical="16dp"/>
+
+    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btndone"

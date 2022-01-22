@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,11 +17,15 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import io.github.kexanie.library.MathView;
+
 public class Question extends AppCompatActivity {
 
     private TextView questions;
-    private TextView question;
-    private AppCompatButton option1, option2, option3, option4;
+    private TextView qword;
+    private MathView question;
+    private LinearLayout a,b,c,d;
+    private MathView option1, option2, option3, option4;
     private AppCompatButton btndone;
     private Timer quizTimer;
     private int totalTimeInMins = 1;
@@ -38,8 +43,14 @@ public class Question extends AppCompatActivity {
         final TextView timer = findViewById(R.id.timer);
         final TextView selectedtopicname = findViewById(R.id.topicName);
 
+        qword = findViewById(R.id.qword);
         questions = findViewById(R.id.questions);
         question = findViewById(R.id.question);
+
+        a = findViewById(R.id.a);
+        b = findViewById(R.id.b);
+        c = findViewById(R.id.c);
+        d = findViewById(R.id.d);
 
         option1 = findViewById(R.id.option1);
         option2 = findViewById(R.id.option2);
@@ -55,19 +66,19 @@ public class Question extends AppCompatActivity {
         startTimer(timer);
 
         questions.setText((currentQuestionPosition+1)+"/"+questionsLists.size());
+        qword.setText(questionsLists.get(0).getQword());
         question.setText(questionsLists.get(0).getQuestion());
         option1.setText(questionsLists.get(0).getOption1());
         option2.setText(questionsLists.get(0).getOption2());
         option3.setText(questionsLists.get(0).getOption3());
         option4.setText(questionsLists.get(0).getOption4());
 
-        option1.setOnClickListener(new View.OnClickListener() {
+        a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(selectedOptionByUser.isEmpty()){
                     selectedOptionByUser = option1.getText().toString();
-                    option1.setBackgroundResource(R.drawable.redbox_10corner);
-                    option1.setTextColor(Color.WHITE);
+                    a.setBackgroundResource(R.drawable.redbox_10corner);
 
                     revealAnswer();
                     questionsLists.get(currentQuestionPosition).setUserSelectedAnswer(selectedOptionByUser);
@@ -75,13 +86,12 @@ public class Question extends AppCompatActivity {
             }
         });
 
-        option2.setOnClickListener(new View.OnClickListener() {
+        b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(selectedOptionByUser.isEmpty()){
-                    selectedOptionByUser = option1.getText().toString();
-                    option2.setBackgroundResource(R.drawable.redbox_10corner);
-                    option2.setTextColor(Color.WHITE);
+                    selectedOptionByUser = option2.getText().toString();
+                    b.setBackgroundResource(R.drawable.redbox_10corner);
 
                     revealAnswer();
                     questionsLists.get(currentQuestionPosition).setUserSelectedAnswer(selectedOptionByUser);
@@ -89,13 +99,12 @@ public class Question extends AppCompatActivity {
             }
         });
 
-        option3.setOnClickListener(new View.OnClickListener() {
+        c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(selectedOptionByUser.isEmpty()){
-                    selectedOptionByUser = option1.getText().toString();
-                    option3.setBackgroundResource(R.drawable.redbox_10corner);
-                    option3.setTextColor(Color.WHITE);
+                    selectedOptionByUser = option3.getText().toString();
+                    c.setBackgroundResource(R.drawable.redbox_10corner);
 
                     revealAnswer();
                     questionsLists.get(currentQuestionPosition).setUserSelectedAnswer(selectedOptionByUser);
@@ -103,13 +112,12 @@ public class Question extends AppCompatActivity {
             }
         });
 
-        option4.setOnClickListener(new View.OnClickListener() {
+        d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(selectedOptionByUser.isEmpty()){
-                    selectedOptionByUser = option1.getText().toString();
-                    option4.setBackgroundResource(R.drawable.redbox_10corner);
-                    option4.setTextColor(Color.WHITE);
+                    selectedOptionByUser = option4.getText().toString();
+                    d.setBackgroundResource(R.drawable.redbox_10corner);
 
                     revealAnswer();
                     questionsLists.get(currentQuestionPosition).setUserSelectedAnswer(selectedOptionByUser);
@@ -147,19 +155,13 @@ public class Question extends AppCompatActivity {
         if((currentQuestionPosition)<questionsLists.size()){
             selectedOptionByUser = "";
 
-            option1.setBackgroundResource(R.drawable.white_10corner);
-            option1.setTextColor(Color.parseColor("#000000"));
-
-            option2.setBackgroundResource(R.drawable.white_10corner);
-            option2.setTextColor(Color.parseColor("#000000"));
-
-            option3.setBackgroundResource(R.drawable.white_10corner);
-            option3.setTextColor(Color.parseColor("#000000"));
-
-            option4.setBackgroundResource(R.drawable.white_10corner);
-            option4.setTextColor(Color.parseColor("#000000"));
+            a.setBackgroundResource(R.drawable.white_10corner);
+            b.setBackgroundResource(R.drawable.white_10corner);
+            c.setBackgroundResource(R.drawable.white_10corner);
+            d.setBackgroundResource(R.drawable.white_10corner);
 
             questions.setText((currentQuestionPosition+1)+"/"+questionsLists.size());
+            qword.setText(questionsLists.get(currentQuestionPosition).getQword());
             question.setText(questionsLists.get(currentQuestionPosition).getQuestion());
             option1.setText(questionsLists.get(currentQuestionPosition).getOption1());
             option2.setText(questionsLists.get(currentQuestionPosition).getOption2());
@@ -191,8 +193,6 @@ public class Question extends AppCompatActivity {
                     quizTimer.cancel();
                     Toast.makeText(Question.this, "Time Over", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Question.this, MainActivity.class);
-                    intent.putExtra("correct", getCorrectAnswer());
-                    intent.putExtra("incorrect", getInCorrectAnswer());
                     startActivity(intent);
 
                     finish();
@@ -266,20 +266,16 @@ public class Question extends AppCompatActivity {
         final String getAnswer = questionsLists.get(currentQuestionPosition).getAnswer();
 
         if(option1.getText().toString().equals(getAnswer)){
-            option1.setBackgroundResource(R.drawable.green_10corner);
-            option1.setTextColor(Color.WHITE);
+            a.setBackgroundResource(R.drawable.green_10corner);
         }
         else if(option2.getText().toString().equals(getAnswer)){
-            option2.setBackgroundResource(R.drawable.green_10corner);
-            option2.setTextColor(Color.WHITE);
+            b.setBackgroundResource(R.drawable.green_10corner);
         }
         else if(option3.getText().toString().equals(getAnswer)){
-            option3.setBackgroundResource(R.drawable.green_10corner);
-            option3.setTextColor(Color.WHITE);
+            c.setBackgroundResource(R.drawable.green_10corner);
         }
         else if(option4.getText().toString().equals(getAnswer)){
-            option4.setBackgroundResource(R.drawable.green_10corner);
-            option4.setTextColor(Color.WHITE);
+            d.setBackgroundResource(R.drawable.green_10corner);
         }
 
     }
